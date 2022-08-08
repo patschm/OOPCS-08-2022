@@ -45,7 +45,7 @@ class Program
         Console.ReadLine();
     }
 
-    private static void ShowIQ(int attempt)
+    static void ShowIQ(int attempt)
     {
         switch (attempt)
         {
@@ -70,7 +70,7 @@ class Program
         }
     }
 
-    private static bool AreEqual(string? guess, string wordToBeGuessed)
+    static bool AreEqual(string? guess, string wordToBeGuessed)
     {
         return guess == wordToBeGuessed;
         //if (guess == wordToBeGuessed)
@@ -80,7 +80,7 @@ class Program
         //return false;
     }
 
-    private static bool IsValidInput(string? guess)
+    static bool IsValidInput(string? guess)
     {
         if (guess == null || guess.Length != MAX_WORD_LENGTH)
         {
@@ -90,13 +90,13 @@ class Program
         return true;
     }
 
-    private static string? AskWord(int attempt)
+    static string? AskWord(int attempt)
     {
         Console.WriteLine("{0}e beurt. Geef een woord", attempt);
         return Console.ReadLine();
     }
 
-    private static string GenerateWord()
+    static string GenerateWord()
     {
         Random rnd = new Random((int)DateTime.Now.Ticks);
         int idx = rnd.Next(0, wordlist.Length);

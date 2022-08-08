@@ -9,10 +9,12 @@ internal class Program
 
         Console.WriteLine(a ^ b);
 
-        int age = 10;
+        int? age = null;
+        int age2 = age ?? 42;
         string? name = Console.ReadLine();
 
         var test = name as string;
         Console.WriteLine(age > 18 ? "Ok": "Opkrassen");
+        Console.WriteLine(nameof(Main));
     }
 }

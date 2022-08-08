@@ -17,7 +17,7 @@ class Program
     {
         // TODO 1: Put the word generation in a function that returns the word.
         // Call the function here
-        Random rnd = new Random((int)DateTime.Now.Ticks);
+        Random rnd = new Random();
         int idx = rnd.Next(0, wordlist.Length);
         string wordToBeGuessed = wordlist[idx];
 
@@ -34,10 +34,10 @@ class Program
             // TODO 3: Create a function to validate the input
             if (guess == null || guess.Length != MAX_WORD_LENGTH)
             {
-                Console.WriteLine("Ongeldig woord");
+                Console.WriteLine($"Ongeldig woord ({guess})");
                 continue;
             }
-            
+
             // TODO 4: Create a function to check if the words are equal
             if (guess == wordToBeGuessed)
             {
@@ -50,7 +50,7 @@ class Program
             }
         }
 
-        // TODO 5: Create a function that shows the IQ level
+        // TODO 5: Create a function that shows the IQ level.
         switch (attempt)
         {
             case 1:
@@ -75,4 +75,5 @@ class Program
 
         Console.ReadLine();
     }
+   
 }
