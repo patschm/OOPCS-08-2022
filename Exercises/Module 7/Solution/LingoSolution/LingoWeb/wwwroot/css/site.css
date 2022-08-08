@@ -1,0 +1,113 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+input[type=text] {
+    vertical-align: top;
+    margin-top: 4px;
+    border: 1px black solid;
+    border-radius: 5px;
+    display: inline-block;
+    height: 1.25em;
+    width: 1.25em;
+    text-align: center;
+    font-size: 3.3em;
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    margin: auto;
+    width: 30em;
+    
+}
+
+.correct {
+    background-color:green;
+    vertical-align: top;
+    margin-top: 2px;
+    border-radius: 100%;
+    display: inline-block;
+    width:1.2em;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrongplace {
+    background-color: yellow;
+    vertical-align: top;
+    margin-top: 2px;
+    border-radius: 100%;
+    display: inline-block;
+    width: 1.2em;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.square {
+    background: blue;
+    vertical-align: top;
+    margin-top: 4px;
+    border: 1px black solid;
+    border-radius: 5px;
+    display: inline-block;
+    height: 1.25em;
+    width: 1.25em;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Lato', sans-serif;
+}
+.circle {
+    vertical-align: top;
+    margin-top: 4px;
+    border-radius: 100%;
+    display: inline-block;
+    height: 1.25em;
+    width: 1.25em;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Lato', sans-serif;
+}
+
+button#play-again, button[type=submit] {
+    vertical-align: top;
+    margin-top: 4px;
+    border-radius: 5px;
+    display: inline-block;
+    height: 1.25em;
+    width:6.8em;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Lato', sans-serif;
+}
+
+div.status {
+    vertical-align: top;
+    margin-top: 4px;
+    border: 1px black solid;
+    border-radius: 5px;
+    display: inline-block;
+    height: 1.25em;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

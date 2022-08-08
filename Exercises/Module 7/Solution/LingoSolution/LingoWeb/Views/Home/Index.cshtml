@@ -1,0 +1,52 @@
+﻿@model LingoWeb.Game
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, LingoWeb
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="/css/site.css" rel="stylesheet" />
+    <title>Lingo</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Guess the word!</h1>
+        <h3>Green = correct letter, Yellow = wrong place</h3>
+        <div class="status">@Model.Status</div>
+        @foreach (var word in Model.Guesses)
+        {
+            <lingo-word word="@word"></lingo-word>         
+        }
+        @if (Model.IsFinished)
+        {
+            <lingo-word word="@Model.WordToBeGuessed"></lingo-word>
+        }
+        @for (int i = Model.Guesses.Count; i < 5; i++)
+        {
+            <div>
+                @for (int j = 0; j < 5; j++)
+                {
+                    <div class="square">
+                    </div>
+                }
+            </div>
+        }
+        <hr />
+        <form id="form" asp-action="Index">
+            <div>
+                @for (int idx = 1; idx <= 5; idx++)
+                {
+                    <input type="text" name="guess" value="" />
+                }
+            </div>
+            <button type="submit" disabled="@Model.IsFinished">Guess</button>
+        </form>
+        <hr />
+
+        <button id="play-again" class="@(Model.IsFinished ? "visible": "invisible")" disabled="@(!Model.IsFinished)">Play Again?</button>
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>
