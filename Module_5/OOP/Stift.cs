@@ -1,10 +1,11 @@
 ﻿namespace OOP;
 
-class Stift: Pen
+// Sealed. Je kunt niett meer erven van deze class.
+sealed class Stift: Pen
 {
     public bool IsAfneembaar { get; set; }
 
-    public override void Write(string txt)
+    public sealed override void Write(string txt)
     {   
         Console.ForegroundColor = Color;
         Console.WriteLine($"De Stift: {txt} in linewidth {Linewidth}");
