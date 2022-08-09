@@ -18,9 +18,9 @@ public class LingoCharacter
         Console.ResetColor();
     }
 
-    public LingoCharacter(char c, int pos)
+    public LingoCharacter(char character, int position)
     {
-        this.position = pos;
-        this.character = c;
+        this.position = position;
+        this.character = character;
     }
 }
