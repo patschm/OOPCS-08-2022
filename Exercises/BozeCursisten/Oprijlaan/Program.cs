@@ -18,6 +18,10 @@ internal class Program
         lus.Connect(cam);
         lus.Connect(kuil);
 
+        lus.Detected += hekje.Open;
+        lus.Detected += cam.Record;
+        lus.Detected += kuil.KlaptOpen;
+
         lus.Detect();
     }
 }
