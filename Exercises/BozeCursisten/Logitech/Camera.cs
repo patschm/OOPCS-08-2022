@@ -1,7 +1,14 @@
-﻿namespace Logitech;
+﻿using IEEE;
 
-public class Camera
+namespace Logitech;
+
+public class Camera : IDetectable
 {
+    public void Activate()
+    {
+        Record();
+    }
+
     public void Record()
     {
         Console.WriteLine("De camara start met opnemen");

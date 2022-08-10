@@ -1,7 +1,14 @@
-﻿namespace Heras;
+﻿using IEEE;
 
-public class Hek
+namespace Heras;
+
+public class Hek: IDetectable
 {
+    public void Activate()
+    {
+        Open();
+    }
+
     public void Open()
     {
         Console.WriteLine("Het hek gaat open");

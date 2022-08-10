@@ -9,11 +9,14 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Hek hekje = new Hek();
-        Valkuil kuil = new Valkuil();
-        Camera cam = new Camera();
-        Detectielus lus = new Detectielus();
+        var hekje = new Hek();
+        var kuil = new Valkuil();
+        var cam = new Camera();
+        var lus = new Detectielus();
 
+        lus.Connect(hekje);
+        lus.Connect(cam);
+        lus.Connect(kuil);
 
         lus.Detect();
     }

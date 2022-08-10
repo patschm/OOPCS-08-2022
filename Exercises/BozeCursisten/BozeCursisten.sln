@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heras", "Heras\Heras.csproj", "{B58BB0DC-09B0-466B-8D1E-62255BC3C57C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heras", "Heras\Heras.csproj", "{B58BB0DC-09B0-466B-8D1E-62255BC3C57C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logitech", "Logitech\Logitech.csproj", "{BF0A1764-CE77-4FF0-90D0-334D7FE766A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logitech", "Logitech\Logitech.csproj", "{BF0A1764-CE77-4FF0-90D0-334D7FE766A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoomsdayPreppers", "DoomsdayPreppers\DoomsdayPreppers.csproj", "{59131D01-E60D-42E4-A686-040FB981733F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoomsdayPreppers", "DoomsdayPreppers\DoomsdayPreppers.csproj", "{59131D01-E60D-42E4-A686-040FB981733F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portacon", "Portacon\Portacon.csproj", "{E7EA6600-CA47-4C1B-8A6B-BF247D6B4DB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portacon", "Portacon\Portacon.csproj", "{E7EA6600-CA47-4C1B-8A6B-BF247D6B4DB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oprijlaan", "Oprijlaan\Oprijlaan.csproj", "{8CFD9CF5-A5A0-497A-B96E-C0FEC52E55C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oprijlaan", "Oprijlaan\Oprijlaan.csproj", "{8CFD9CF5-A5A0-497A-B96E-C0FEC52E55C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEEE", "IEEE\IEEE.csproj", "{9EDD0D35-15D3-4F89-958D-F39E1EACCE4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8CFD9CF5-A5A0-497A-B96E-C0FEC52E55C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CFD9CF5-A5A0-497A-B96E-C0FEC52E55C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CFD9CF5-A5A0-497A-B96E-C0FEC52E55C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EDD0D35-15D3-4F89-958D-F39E1EACCE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDD0D35-15D3-4F89-958D-F39E1EACCE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDD0D35-15D3-4F89-958D-F39E1EACCE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDD0D35-15D3-4F89-958D-F39E1EACCE4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
