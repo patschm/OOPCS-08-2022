@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DoomsdayPreppers\DoomsdayPreppers.csproj" />
+    <ProjectReference Include="..\Heras\Heras.csproj" />
+    <ProjectReference Include="..\Logitech\Logitech.csproj" />
+    <ProjectReference Include="..\Portacon\Portacon.csproj" />
+  </ItemGroup>
+
 </Project>
